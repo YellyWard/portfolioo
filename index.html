@@ -16,6 +16,11 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
+        position: fixed;
+        max-width: 160rem;
+        width: 100%;
+        background-color: white;
+        z-index: 2;
     }
  
     li {
@@ -66,12 +71,11 @@
             <img src="./img/jha.jpg.jpg" alt="" width="100px" height="100px">
  
             <ul>
-                <li>Home</li>
-                <li>Portfolio</li>
-                <li>Services</li>
-
-                <li>About</li>
-                <li>Contact</li>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#About">Works</a></li>
+                <li><a href="#Services">Services</a></li>
+                <li><a href="#certificates">Certificates</a></li>
+                <li><a href="#footer">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -151,6 +155,44 @@
         </div>
   </section>
 
+  <section id="Services"  style="background-color: rgb(31, 31, 31); height: 100%; padding: 15rem 1rem; color: white;">
+    <div style="display: flex; justify-content: space-evenly; gap: 2rem; align-items: center;">
+        <div style="display: flex; text-align: center; padding: 1rem; border-radius: 10px; border: solid 1px white;  flex-direction: column; row-gap: 20px;">
+            <div>
+                <img style="height: 40px;" src="./github.png" alt="">
+            </div>
+            <div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis nisi 
+                    corporis est excepturi voluptate, voluptatem modi aliquam porro. 
+                    Sunt, optio?
+                </p>
+            </div>
+        </div>
+        <div style="display: flex; text-align: center; padding: 1rem; border-radius: 10px; border: solid 1px white; flex-direction: column; row-gap: 20px;">
+            <div>
+                <img style="height: 40px;" src="./github.png" alt="">
+            </div>
+            <div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis nisi 
+                    corporis est excepturi voluptate, voluptatem modi aliquam porro. 
+                    Sunt, optio?
+                </p>
+            </div>
+        </div>
+        <div style="display: flex; text-align: center; padding: 1rem; border-radius: 10px; border: solid 1px white; flex-direction: column; row-gap: 20px;">
+            <div>
+                <img style="height: 40px;" src="./github.png" alt="">
+            </div>
+            <div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis nisi 
+                    corporis est excepturi voluptate, voluptatem modi aliquam porro. 
+                    Sunt, optio?
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
     <section id="certificates">
         <h1>My Certificates</h1>
         <div style="display: flex; align-items: center;
@@ -194,7 +236,7 @@
 
             <div>
                 <p>
-                    Copyright © 2023 Bernie S. Fernando. All rights reserved
+                    Copyright © 2023 John Howard Aguilar. All rights reserved
                 </p>
             </div>
             
