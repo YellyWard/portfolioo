@@ -1,0 +1,13 @@
+#footer {
+    height: 100%;
+    background-color: black;
+    padding: 7rem 1rem 1rem 1rem;
+    color: white;
+    text-align: center;
+    border-top: solid 1px white;
+}
+
+.icon {
+    height: 30px;
+    margin-left: 20px;
+}
