@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href=""./style.css">
     <title>John Howard Aguilar</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 </head>
  
 <style>
@@ -36,11 +39,10 @@
         color: white;
     }
     #About {
-    height: 1000px;
     background-color: rgb(31, 31, 31);
         color: white;;
     border: solid 1px black;
-    display: flex;
+   
     align-items: center;
     justify-content: center;
 }
@@ -48,7 +50,7 @@
     height: 100%;
     background-color: rgb(31, 31, 31);
     border: solid 1px black;
-    display: grid;
+    
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -61,14 +63,28 @@
     max-width: 160rem;
     margin: 0 auto;
 }
-  
+
  
 </style>
+
+
 <body>
-<section class="int">
+<!-- nav -->
     <header>
-        <nav>
-            <img src="./img/jha.jpg.jpg" alt="" width="100px" height="100px">
+        <nav class="navbar navbar-expand-lg sticky-top">
+
+            <div class="container container-fluid">
+                <img src="/img/jha.jpg.jpg" alt="" width="100px" height="100px">
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" style="margin-left: 13rem;">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+            <div>  
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+
+            <div class="navbar-nav">
  
             <ul>
                 <li><a href="#Home">Home</a></li>
@@ -77,177 +93,198 @@
                 <li><a href="#certificates">Certificates</a></li>
                 <li><a href="#footer">Contact</a></li>
             </ul>
+        </div>
+                </div>
+             </div>
+            </div>
         </nav>
     </header>
  
-    <section id="Home" class="pt-5 pb-5 align-items-center">
+    <!-- hero -->
+    <section id="Home" class="pt-5 pb-5 text-center">
         <div class="container container-fluid">
-
-            <div>
-                <h1 style="font-size: 2rem; text-align: center; margin-bottom: 5rem;">
-                    Building a stunning and up to date website
-                </h1>
-            </div>
             <div class="row">
-                <div class="col-6">
-                    <div >
-                        <img src="./img/pfp-removebg-preview.png" class="img-fluid">
+                <div class="col-12 col-md-6 order-md-2">
+                    <img src="./img/pfp-removebg-preview.png" class="img-fluid">
+                </div>
+                <div class="col-12 col-md-6 order-md-1">
+                    <div style="text-align: center; margin-bottom: 5rem;">
+                        <h1 style="font-size: 2rem;">
+                            Building a stunning and up to date website
+                        </h1>
                     </div>
-               
-            </div>
-
-          <div class="col-6">
-            <h1>
-                John Howard V. Aguilar Student <br> From Guagua National Colleges, <br> Bachelor of
-                Science Information <br> Technology.
-            </h1>
-
-            <p>
-                clean code always look like was written by <br>
-                someone who cares. -- Robert C. Martin
-            </p>
-            <br>
-            <button style="width: 140px; height: 40px;">
-                My work
-            </button>
-            <button style="width: 140px; height: 40px;">
-                Hire Me
-            </button>
- 
-                
+                    <div>
+                        <h1>
+                            John Howard V. Aguilar Student <br> From Guagua National Colleges, <br> Bachelor of
+                            Science Information <br> Technology.
+                        </h1>
+                        <p>
+                            clean code always look like was written by <br>
+                            someone who cares. -- Robert C. Martin
+                        </p>
+                        <br>
+                        <button style="width: 140px; height: 40px;">
+                            My work
+                        </button>
+                        <button style="width: 140px; height: 40px;">
+                            Hire Me
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
     </section>
     
-    <section id="About" style="height: 100%; display: grid; align-items: center; justify-content: center;">
-      <h1 style="text-align: center; font-size: 30px;">My work</h1>
-      <div style="display: grid;">
-          <div style="display: grid; gap: 5rem; grid-template-columns: 300px 400px; margin-bottom: 4rem;">
-              <div>
-                  <h1 style="text-align: center;">My Portfolio #2</h1>
-                  <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, accusantium.</h2>
-              </div>
 
-              <div>
-                  <img style="object-fit: cover; height: 300px;" src="./img/1.png" alt="">
-              </div>
-          </div>
+    <!-- work -->
+    <section id="About" class=" pb-5 text-center" style="padding-bottom: 50rem;">
+        <div class="container container-fluid text-center pb-5 pt-5">
+            <div class="ct row">
+                <div class="col-md-6 text-center">
+                    <h1 style="padding-top: 8rem; font-size: 1.7rem;">My Portfolio #1 </h1>
+                    <h2 class="pt-3" style=" font-size: 1.3rem;">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, accusantium.</h2>
 
-          <div style="display: grid; gap: 5rem; grid-template-columns:300px 400px;">
-              <div>
-                  <h1 style="text-align: center;">My Portfolio #2</h1>
-                  <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, accusantium.</h2>
-              </div>
-              
-              <div>
-                  <img style="object-fit: cover; height: 300px;" src="./img/3.png" alt="">
-              </div>
-          </div>
-          <br>
-          <br>
-          <br>
-          <br>
-      </div>
-      <div style="display: grid; gap: 5rem; grid-template-columns:300px 400px;">
-        <div>
-            <h1 style="text-align: center;">My Portfolio #3</h1>
-            <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, accusantium.</h2>
-        </div>
-        
-        <div>
-            <img style="object-fit: cover; height: 300px;" src="./img/2.png" alt="">
-        </div>
-  </section>
+                </div>
 
-  <section id="Services"  style="background-color: rgb(31, 31, 31); height: 100%; padding: 5rem 1rem; color: white;">
-    <h1 style="text-align: center; font-size: 30px;">Services</h1>
-    <div style="display: flex; justify-content: space-evenly; gap: 2rem; align-items: center;">
-        <div style="display: flex; text-align: center; padding: 1rem; border-radius: 10px; border: solid 1px white;  flex-direction: column; row-gap: 20px;">
-            <div>
-                <img style="height: 40px;" src="./img/firefighter.png" alt="" >
+                <div class="col-sm-4 img-fluid text-center">
+                    <img src="./img/1.png" class="img-fluid"
+                    style="object-fit: cover; height: 300px;" alt="">
+                </div>
             </div>
-            <div>
-                <p>A firefighter is a first responder trained in firefighting, primarily
-                     to control and extinguish fires that threaten life and property, 
-                    as well as to rescue persons from confinement or dangerous situations.
-                </p>
+
+            <div class="ct row">
+                <div class="col-md-6 text-center">
+                    <h1 style="padding-top: 8rem; font-size: 1.7rem;">My Portfolio #2 </h1>
+                    <h2 class="pt-3" style=" font-size: 1.3rem;">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, accusantium.</h2>
+
+                </div>
+
+                <div class="col-sm-4 img-fluid text-center">
+                    <img src="./img/3.png" class="img-fluid"
+                    style="object-fit: cover; height: 300px;" alt="">
+                </div>
             </div>
-        </div>
-        <div style="display: flex; text-align: center; padding: 1rem; border-radius: 10px; border: solid 1px white; flex-direction: column; row-gap: 20px;">
-            <div>
-                <img style="height: 40px;" src="./img/coding.png" alt="">
+
+
+            <div class="ct row">
+                <div class="col-md-6 text-center">
+                    <h1 style="padding-top: 8rem; font-size: 1.7rem;">My Portfolio #3 </h1>
+                    <h2 class="pt-3" style=" font-size: 1.3rem;">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, accusantium.</h2>
+
+                </div>
+
+                <div class="col-sm-4 img-fluid text-center">
+                    <img src="./img/2.png" class="img-fluid"
+                    style="object-fit: cover; height: 300px;" alt="">
+                </div>
             </div>
-            <div>
-                <p>Coding, also known as computer programming, is the process of 
+
+    </section>
+
+<!-- serv -->
+    <section id="Services"  style="background-color: rgb(31, 31, 31);  padding: 5rem 1rem; color: white;" class="text-center">
+        <div class="container container-fluid">
+            <div class="row">
+              <div class="col-md-12 col-sm-12">
+                <h1 style="text-align: center; font-size: 30px; padding-bottom: 1rem;">Services</h1>
+
+                <div class="card img-fluid border-light mb-3"
+                style="max-width: 20rem; background-color:rgb(31, 31, 31); display: inline-block; margin-right: 50px; margin-left: 40px; text-align: center;">
+                <img src="./img/firefighter.png" class="card-img-top" style="width: 40px; margin-bottom: 1.5rem;">
+                <div class="card-body">
+                  <p class="card-text">A firefighter is a first responder trained in firefighting, primarily
+                    to control and extinguish fires that threaten life and property, 
+                   as well as to rescue persons from confinement or dangerous situations.
+                  </p>
+                </div>
+              </div>
+    
+
+              <div class="card img-fluid border-light mb-3"
+              style="max-width: 20rem; background-color:rgb(31, 31, 31); display: inline-block; margin-right: 50px; margin-left: 40px; text-align: center;">
+              <img src="./img/coding.png" class="card-img-top" style="width: 40px;">
+              <div class="card-body">
+                <p class="card-text">Coding, also known as computer programming, is the process of 
                     writing instructions for computers and other hardware to follow. These instructions, 
                     called programs, specify how the computer shouldperform a task or series of tasks.
                 </p>
+              </div>
+            </div>
+
+            <div class="card img-fluid border-light mb-3"
+            style="max-width: 20rem; background-color:rgb(31, 31, 31); display: inline-block; margin-right: 50px; margin-left: 40px; text-align: center;">
+            <img src="./img/saxophone.png" class="card-img-top" style="width: 40px; margin-bottom: 1.5rem;">
+            <div class="card-body">
+              <p class="card-text">A marching band is a group of instrumental musicians who perform 
+                while marching, often for entertainment or competition. They are most popular 
+                in the United States, though not uncommon in other parts of the world.
+              </p>
+            </div>
+          </div>
+
+              </div>
             </div>
         </div>
-        <div style="display: flex; text-align: center; padding: 1rem; border-radius: 10px; border: solid 1px white; flex-direction: column; row-gap: 20px;">
-            <div>
-                <img style="height: 40px;" src="./img/saxophone.png" alt="">
-            </div>
-            <div>
-                <p>A marching band is a group of instrumental musicians who perform 
-                    while marching, often for entertainment or competition. They are most popular 
-                    in the United States, though not uncommon in other parts of the world.
-                </p>
-            </div>
+    </section>
+<!-- cert -->
+<section id="certificates" class="pt-5 pb-5 text-center">
+    <div class="container">
+      <h1 style="font-size: 30px;">My Certificates</h1>
+      <div class="row justify-content-center">
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+          <img style="width: 100%; height: auto;" class="img-fluid"
+            src="./img/Cert1.png">
         </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+          <img style="width: 100%; height: auto;" class="img-fluid"
+            src="./img/cert2.png">
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+          <img style="width: 100%; height: auto;" class="img-fluid"
+            src="./img/cert3.png">
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+          <img style="width: 100%; height: auto;" class="img-fluid"
+            src="./img/cert4.png">
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+          <img style="width: 100%; height: auto;" class="img-fluid"
+            src="./img/cert5.png">
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+          <img style="width: 100%; height: auto;" class="img-fluid"
+            src="./img/cert6.png">
+        </div>
+      </div>
     </div>
-</section>
+  </section>
 
-    <section id="certificates">
-        <h1 style="font-size: 30px;">My Certificates</h1>
-        <div style="display: flex; align-items: center;
-            justify-content: center; gap: 1rem;">
-            <div class="card1">
-                <img height="300px" src="./img/Cert1.png" alt="" width="400px" heigth="100px" > 
-                <div>
-                <img height="300px" src="./img/cert4.png" alt="" width="400px" heigth="100px">
-            </div>
-    
-            </div>
 
-            <div>
-                <img height="300px" src="./img/cert2.png" alt="" width="400px" heigth="100px">
-                <div>
-                <img height="300px" src="./img/cert5.png" alt="" width="400px" heigth="100px">
-                
-            </div>
-            </div>
+  <!-- footer -->
+  <section id="footer">
+    <footer >
 
-            <div>
-                <img height="300px" src="./img/cert3.png" alt="" width="400px" heigth="100px">
-                <div>
-                <img height="300px" src="./img/cert6.png" alt="" width="400px" heigth="100px">
-                
-            </div>
-            </div>
+        <div>
+            <a href="https://www.facebook.com/poward.31?mibextid=ZbWKwL" role="button" target="_blank"><img class="icon" src="./img/facebook.png" alt=""></a>
+            <a href="https://instagram.com/howard.aguilar?igshid=OGQ5ZDc2ODk2ZA==" role="button" target="_blank"><img class="icon" src="./img/instagram.png" alt=""></a>
+            <a href="https://github.com/YellyWard/portfolioo" role="button" target="_blank"><img class="icon" src="./img/github.png" alt=""></a>
         </div>
-    </section>
 
-
-
-    <section id="footer">
-        <footer >
-
-            <div>
-                <a href="https://www.facebook.com/poward.31?mibextid=ZbWKwL" role="button" target="_blank"><img class="icon" src="./img/facebook.png" alt=""></a>
-                <a href="https://instagram.com/howard.aguilar?igshid=OGQ5ZDc2ODk2ZA==" role="button" target="_blank"><img class="icon" src="./img/instagram.png" alt=""></a>
-                <a href="https://github.com/YellyWard/portfolioo" role="button" target="_blank"><img class="icon" src="./img/github.png" alt=""></a>
-            </div>
-
-            <div>
-                <p>
-                    Copyright © 2023 John Howard Aguilar. All rights reserved
-                </p>
-            </div>
-            
-        </footer>
-    </section>
+        <div>
+            <p>
+                Copyright © 2023 John Howard Aguilar. All rights reserved
+            </p>
+        </div>
+        
+    </footer>
 </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+    integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+    crossorigin="anonymous"></script>
+
 </body>
-</html>
